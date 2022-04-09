@@ -1,0 +1,17 @@
+<%- include('header') %>
+<div class="loginbox my-5">
+    <img src="css/images2/Avatar1.png" class="avatar">
+    <h1>Login Here</h1>
+    <% if(userAdded) { %>
+        <h4 style="color: green; text-align: center;"><%= userAdded %></h4>
+    <% } %>
+    <form>
+        <p>Username</p>
+        <input type="text" name="" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="" placeholder="Enter Password">
+        <input type="submit" name="" value="Login">
+        <a href="register">Don't have an account</a><br>
+    </form>
+</div>
+<%- include('footer') %>

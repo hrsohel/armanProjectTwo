@@ -1,0 +1,62 @@
+<%- include('header') %>
+<div class="regbb">
+    <div class="container ff">
+      <div class="title">Registration</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">NID</span>
+            <input type="text" placeholder="Enter your NID number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Blood Group</span>
+            <input list="blood group" name="blood group" id="group" placeholder="Enter blood group" required>
+            <datalist id="blood group">
+              <option value="O+">
+              <option value="O-">
+              <option value="A+">
+              <option value="A-">
+              <option value="B+">
+              <option value="B-">
+              <option value="AB+">
+              <option value="AB-">
+            </datalist>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+            <span class="gender-details">Select Gender</span>
+            <input list="gender-details" name="gender-details" id="gender" placeholder="Select your gender" required>
+            <datalist id="gender-details">
+              <option value="Male">
+              <option value="Female">
+              <option value="Prefer not so">
+            </datalist>
+          </div>
+        </div>
+  
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+<%- include('footer') %>

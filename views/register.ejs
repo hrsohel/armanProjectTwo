@@ -1,0 +1,65 @@
+<%- include('header') %>
+<div class="regbb">
+    <div class="container ff">
+      <div class="title">Registration</div>
+      <form action="register" method="post">
+        <% if(wrongPassword) { %>
+          <h4 style="color: red;text-align: center;"><%= wrongPassword %></h4>
+        <% } %>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full name</span>
+            <input type="text" name="fullName" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">NID</span>
+            <input type="text" name="NID" placeholder="Enter your NID number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Blood Group</span>
+            <select name="bloodGroup" placeholder="Select Blood Group">
+              <option >Select Blood Group</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" name="cpassword" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+            <span class="gender-details">Select Gender</span>
+            <input list="gender-details" name="gender" id="gender" placeholder="Select your gender" required>
+            <datalist id="gender-details">
+              <option value="Male">
+              <option value="Female">
+              <option value="Prefer not so">
+            </datalist>
+          </div>
+        </div>
+  
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+<%- include('footer') %>

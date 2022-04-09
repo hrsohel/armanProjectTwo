@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Registration form</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/registration.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+  <section class="home">
+    <header class="continer-fluid ">
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-md-3 logo">
+                        <img src="assets/images/logo10.PNG" alt="">
+                    </div>
+                    <div class="col-md-9 nav-col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Process</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Contact US</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+<div class="regbb">
+  <div class="container ff">
+    <div class="title">Registration</div>
+    <form action="#">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Full name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <span class="details">NID</span>
+          <input type="text" placeholder="Enter your NID number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email</span>
+          <input type="text" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Blood Group</span>
+          <input list="blood group" name="blood group" id="group" placeholder="Enter blood group" required>
+          <datalist id="blood group">
+            <option value="O+">
+            <option value="O-">
+            <option value="A+">
+            <option value="A-">
+            <option value="B+">
+            <option value="B-">
+            <option value="AB+">
+            <option value="AB-">
+          </datalist>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="text" placeholder="Enter your phone number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input type="password" placeholder="Confirm your password" required>
+        </div>
+        <div class="input-box">
+          <span class="gender-details">Select Gender</span>
+          <input list="gender-details" name="gender-details" id="gender" placeholder="Select your gender" required>
+          <datalist id="gender-details">
+            <option value="Male">
+            <option value="Female">
+            <option value="Prefer not so">
+          </datalist>
+        </div>
+      </div>
+
+      <div class="button">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</html>

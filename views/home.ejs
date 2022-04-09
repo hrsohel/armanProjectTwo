@@ -1,0 +1,96 @@
+<%- include('header') %>
+<!-- <section class="home">
+
+    <header class="continer-fluid ">
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-md-3 logo">
+                        <img src="images/logo10.PNG" alt="">
+                    </div>
+                    <div class="col-md-9 nav-col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#process">Process</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Loginframe.html">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact US</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+</section> -->
+
+<div class="banner-page">
+    <div class="container">
+        <div class="banner-page-content">
+            <h1>Become A Donor And Save The Life</h1>
+            <p>The gift of blood is the gift of life</p>
+
+            <div class="dropdown">
+                <button onclick="registrationList()" class="dropbtn">Registration</button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a href="hospitalreg" target="_blank" onclick="hospital">Hospital</a>
+                    <a href="Registration" target="_blank" onclick="donor">Donor</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="loginList()" class="dropbtn">Log-in</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="./hos_login" target="_blank" onclick="hospital">Hospital</a>
+                    <a href="./Loginframe" target="_blank" onclick="donor">Donor</a>
+                </div>
+            </div>
+
+            <script>
+                /* methods to hide and show the dropdown content */
+                function registrationList() {
+                    document.getElementById("myDropdown1").classList.toggle("show");
+                }
+
+                function loginList() {
+                    document.getElementById("myDropdown2").classList.toggle("show");
+                }
+
+
+
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</div>
+
+<!-- ################# Donation Process Start Here #######################--->
+
+
+<%- include('footer') %>
