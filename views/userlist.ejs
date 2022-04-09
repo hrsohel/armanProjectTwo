@@ -1,0 +1,24 @@
+<%- include('header') %>
+<div style="background-color: white;" class="container table-responsive-lg my-5 text-black text-center">
+    <table class="table">
+        <tr>
+            <th>Full Name</th>
+            <th>NID</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>Blood Group</th>
+        </tr>
+        <% for(var user of userlist) {%>
+        <tr>
+            <td><%= user.fullName %></td>
+            <td><%= user.NID %></td>
+            <td><%= user.email %></td>
+            <td><%= user.phone %></td>
+            <td><%= user.gender %></td>
+            <td><%= user.bloodGroup %></td>
+        </tr>
+        <% } %>
+    </table>
+</div>
+<%- include('footer') %>

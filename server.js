@@ -68,6 +68,14 @@ app.get('/hospitalreg', (req, res) => {
 app.get('/Registration', (req, res) => {
     res.render('Registration')
 })
+app.get('/userlist', (req, res) => {
+    const sql = "SELECT * FROM users"
+    conn.query(sql, (err, result) => {
+        if(!err) {
+            res.render('userlist', {userlist: result})
+        }
+    })
+})
 app.post('/register', async (req, res) => {
     const {fullName, NID, email, phone, bloodGroup, gender, password, cpassword} = req.body
     const hasedPassword = await bcrypt.hash(password, 10)
